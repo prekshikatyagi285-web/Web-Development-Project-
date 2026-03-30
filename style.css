@@ -1,0 +1,539 @@
+/* ================================
+   General Reset & Font
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow: hidden; /* Prevent scrolling */
+    height: 100vh;
+}
+
+/* ================================
+   Navbar
+================================ */
+/* Navbar thin line */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    z-index: 10;
+    border-bottom: 1px solid rgba(255,255,255,0.3); /* thin grey line */
+}
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 50px; /* reduced vertical padding from 20px → 10px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(136, 123, 123, 0.804);
+    z-index: 10;
+}
+
+nav .logo {
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* ================================
+   INDEX PAGE - Hero Section
+================================ */
+.hero {
+    height: 100vh;
+    background: url('images/dubai.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero .content h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.hero .content p.highlight {
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    color: #f7f7f2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: #e65c00;
+}
+
+/* Places Grid Section */
+body {
+    background-image: url("images/white.jpg");
+    background-size: cover;      /* fills screen */
+    background-position: center; /* keeps it centered */
+    background-repeat: no-repeat;
+}
+.places-grid-section {
+    padding: 50px;
+    background: #f5f5f5;
+    height: 100vh;
+    overflow: hidden; /* No scroll */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section Title */
+.places-grid-section h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #333;
+}
+
+/* Grid Layout */
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for first row */
+    grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+    gap: 30px;
+}
+
+/* Place Card Styling */
+.place-card-grid {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.place-card-grid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+}
+
+.place-card-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.place-card-grid h2 {
+    font-size: 22px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.place-card-grid p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Booking Button */
+/* Grid Layout */
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    position: relative;
+}
+
+/* Place Cards */
+.place-card-grid {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.place-card-grid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+}
+
+.place-card-grid img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* Booking Button on Right Side */
+.btn-book-grid {
+    grid-column: 3; /* place in 3rd column */
+    grid-row: 2;    /* place in 2nd row (empty space) */
+    justify-self: center; /* center horizontally in that grid cell */
+    align-self: center;   /* center vertically */
+    padding: 18px 35px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-book-grid:hover {
+    background: #e65c00;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 30px;
+}
+
+/* LAYOUT */
+.experience-container {
+    display: flex;
+    padding: 40px;
+}
+
+.left {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* FIX */
+}
+
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: 90%;
+    border-radius: 20px;
+}
+
+/* NOTES */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* NAVBAR */
+nav {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* HOME PAGE BACKGROUND ONLY */
+.home-page {
+    background-image: url("images/white.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* ================================
+   EXPERIENCE PAGE (FIXED VERSION)
+================================ */
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* MAIN CONTAINER */
+.experience-container {
+    display: flex;
+    min-height: 100vh; /* allows scrolling */
+    padding: 70px 30px 20px 30px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+/* LEFT SIDE */
+.left {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TITLE */
+.exp-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* GRID */
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* FIXED */
+    gap: 25px;
+    align-items: stretch;
+    
+}
+
+/* CARD */
+.exp-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    height: 100%
+}
+
+.exp-card:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGE */
+.exp-card img {
+    width: 100%;
+    height: 200px; /* FIXED HEIGHT */
+    object-fit: cover;
+}
+
+/* TEXT */
+.exp-card p {
+    padding: 8px;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* CARD TITLE */
+.exp-card p strong {
+    display: block;
+    font-size: 14px;
+    color: #ff6600;
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+/* RIGHT SIDE */
+.right {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RIGHT BOX */
+.right-box {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.right-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.right-box h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ff6600;
+}
+
+.right-box p {
+    font-size: 13px;
+}
+
+/* BUTTON */
+.book-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.book-btn:hover {
+    background: #e65c00;
+}
+/* ================================
+   BOOKING POPUP
+================================ */
+
+/* DARK BACKGROUND */
+.popup {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999; /* makes sure it's on top */
+}
+
+/* POPUP BOX */
+.popup-content {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    position: relative;
+
+    animation: popupFade 0.3s ease;
+}
+
+/* ANIMATION (smooth pop effect) */
+@keyframes popupFade {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* FORM INPUTS */
+.popup-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+/* BUTTON */
+.popup-content button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background: #e65c00;
+}
+.right {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-below {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-below p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.social-icons img {
+    width: 28px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
