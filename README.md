@@ -5,8 +5,8 @@ This project is a 3-page website created using HTML and CSS for the Unit 3 Web D
 
 ## Pages
 - Home (index.html)
-- Experiences page
-- Contact/About page
+- Places page
+- Contact/Experience page
 
 ## Features
 - Navigation bar linking all pages
