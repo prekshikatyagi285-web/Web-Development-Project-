@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dubai Experiences</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2 class="logo">Dubai Tours</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="experience.html">Experience</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN CONTAINER -->
+<div class="experience-container">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+
+        <h1 class="exp-title">Top Dubai Experiences</h1>
+
+        <div class="exp-grid">
+
+            <div class="exp-card">
+                <img src="images/aqua.jpg">
+                <p><strong>Aquaventure Park</strong></p>
+                <p>Thrilling slides, lazy rivers & private beach</p>
+                <p>AED 335 Adults / AED 280 Children</p>
+            </div>
+
+            <div class="exp-card">
+                <img src="images/vill.jpg">
+                <p><strong>Global Village</strong></p>
+                <p>Cultural pavilions, food, rides & live shows</p>
+                <p>AED 15 Entry</p>
+            </div>
+
+            <div class="exp-card">
+                <img src="images/garden.jpg">
+                <p><strong>Miracle Garden</strong></p>
+                <p>Over 50 million blooms & stunning displays</p>
+                <p>AED 55 Entry</p>
+            </div>
+
+            <div class="exp-card">
+                <img src="images/future.jpg">
+                <p><strong>Museum of the Future</strong></p>
+                <p>Futuristic tech & immersive experiences</p>
+                <p>AED 145 Adults</p>
+            </div>
+
+            <div class="exp-card">
+                <img src="images/food.jpg">
+                <p><strong>Fine Dining</strong></p>
+                <p>Luxury restaurants with world-class chefs</p>
+                <p>From AED 200+</p>
+            </div>
+
+            <div class="exp-card">
+                <img src="images/ski.jpg">
+                <p><strong>Ski Dubai</strong></p>
+                <p>Indoor slopes & snow park</p>
+                <p>AED 200 Ski</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+        <!-- WHITE BOX -->
+        <div class="right-box">
+            <img src="images/fam.jpg">
+            <h2>Make Memories That Last Forever ✨</h2>
+            <p>Experience luxury, adventure, and culture all in one trip.</p>
+
+            <a href="javascript:void(0)" class="book-btn" onclick="openPopup()">Book Now - 50% OFF</a>
+        </div>
+
+        <!-- 🔥 SOCIAL SECTION BELOW -->
+        <div class="social-below">
+            <p>@dubaitours</p>
+
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.jpg" alt="Instagram">
+                </a>
+
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.jpg" alt="YouTube">
+                </a>
+
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.jpg" alt="Twitter">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- BOOKING POPUP -->
+<div id="booking-popup" class="popup">
+    <div class="popup-content">
+        
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        
+        <h2>Book Experience</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="date" required>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+
+    </div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+function openPopup() {
+    document.getElementById("booking-popup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("booking-popup").style.display = "none";
+}
+
+window.onclick = function(event) {
+    let popup = document.getElementById("booking-popup");
+    if (event.target === popup) {
+        popup.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
